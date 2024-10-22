@@ -21,7 +21,7 @@ def numberOfislands(grid ):
 #Here this function will iterate over the ilands here and marks them visited after tha completion it will increase the counter
 def MarkTheIsland(i,j,grid,visited):
     if visited.get((i, j), False) or grid[i][j]=="0":
-        return
+        return 
     visited[i,j] = True
     if i+1<len(grid):
         MarkTheIsland(i+1,j,grid,visited)
